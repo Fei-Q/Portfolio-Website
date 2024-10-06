@@ -1,0 +1,273 @@
+<!-- tutorial: https://www.youtube.com/watch?v=0YFrGy_mzjY&t=244s -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contents="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styel.css">
+    <script src="https://kit.fontawesome.com/64499ebaa5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1>My Portfolio.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi! I'm <span>Yifei Qi</span><br> from China</h1>
+            <p>Welcome to my page ~</p>
+        </div>
+    </div>
+</div>
+
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="photo.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>After 18 years living in Shanghai, China, I'm currently a sophomore at the University of Richmond in Richmond, VA. Here are some facts about me:</p>
+                <br>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education <i class="fa-solid fa-graduation-cap"></i></p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills <i class="fa-solid fa-wrench"></i></p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies <i class="fa-solid fa-gamepad"></i></p>
+                </div>
+
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li>
+                            <span>University of Richmond</span> <span1>May 2027</span1>
+                            <li>Majors: B.S. in Computer Science, Biology with Neuroscience Concentration</li>
+                            <li>Minors: Math, Data Science & Statistics, Linguistics</li>
+                            <li>GPA: 3.97 (Dean's List Fall 2023, Spring 2024)</li>
+                            <li>Tech courses: Intro to Computing, Discrete Math, Calculus 3, Statistics (Methods & Analysis)</li>
+                            <li>Science courses: Integrated Biological Principles I & II, Organic Chemis I & II, Physics I</li>
+                        </li>
+                        <br>
+                        <li><span>Shanghai United International School</span> <span1>May 2023</span1>
+                            <li>IB Diploma Programme: 40/45 (GPA 3.97)</li>
+                            <li>IGCSE: 8 A*, 2 A</li>
+                        </li>
+                        <br>
+                        <li><span>School of Field Studies</span> <span1>Jun - Jul 2024</span1>
+                            <li>Marine Biology study abroad in Turks and Caicos (We wrestled sharks!)</li>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li>
+                            <span>Coding</span>
+                            <li>Languages: Python, HTML, CSS, LaTeX, Markdown</li>
+                            <li>Software: Excel, SPSS, Canva</li>
+                        </li>
+                        <br>
+                        <li><span>Certifications</span>
+                            <li>Certified Entry-Level Python Programmer (PCEP)</li>
+                            <li>AIDA 2 (Free-diving)</li>
+                        </li>
+                        <br>
+                        <li><span>Languages</span>
+                            <li>Native proficiency: Mandarin, English</li>
+                            <li>Beginner/intermediate: Spanish, German, Japanese</li>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li><span>Clubs & Organizations</span>
+                            <li>Osmosis STEM Magazine - VP of Design</li>
+                            <li>Girls Who Code - Member</li>
+                            <li>Alpha Sigma Kappa - Member</li>
+                            <li>Chinese Humanities Club - Member</li>
+                        </li>
+                        <br>
+                        <li>
+                            <span>Sporty stuff</span>
+                            <li>Love going outdoors! Surfing, Snowboarding, Free-diving, Rock climbing, Hiking...</li>
+                            <li>Running!</li>
+                        </li>
+                        <br>
+                        <li><span>Artsy stuff</span>
+                            <li>Playing the Piano & Guitar</li>
+                            <li>Reading (fav genres: dystopian, mystery, sci-fi)</li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id = "experiences">
+    <div class="container">
+        <h1 class="sub-title">Experiences</h1>
+        <div class="experiences-list">
+            <h2>University of Richmond</h2>
+            <ul>
+                <li>
+                    <span>Resident Assistant</span>  <span1>Jul 2024 - present</span1>
+                    <li>Facilitate and enhance the residential experience of students on campus</li>
+                </li>
+                <br>
+                <li><span>Math & Computer Science Peer Mentor</span>  <span1>Mar 2024 - present</span1>
+                    <li>Offer personalized, one-on-one assistance for calculus, Python, and Excel</li>
+                </li>
+                <br>
+                <li><span>Health Psychology Research Assistant</span>  <span1>May 2024 - Jul 2024</span1>
+                    <li>Researched strength-based strategies employed by adult patients diagnosed with end-stage organ disease</li>
+                </li>
+                <br>
+                <li><span>Experiential Learning Assistant</span>  <span1>Oct 2023 - May 2024</span1>
+                    <li>Organized data in Airtable and analyzed data in Excel</li>
+                    <li>Designed posters, flyers, and invitations for department events</li>
+                </li>
+                <br>
+                <li><span>Phonathon Caller</span>  <span1>Oct 2023 - Mar 2024</span1>
+                    <li>Networked with alumni professionally over the phone to fundraise for the university</li>
+                </li>
+            
+            <h2>Shanghai United International School</h2>
+                <ul>
+                    <li>
+                        <span>Math Tutor</span>  <span1>2021 - 2022</span1>
+                        <li>Tutored IGCSE Additional Math to high school students</li>
+                    </li>
+                    <br>
+                    <li><span>Psychology Club Leader</span>  <span1>2021 - 2023</span1>
+                        <li>Founded and led a psychology club, which would post blog articles on social media about psychological facts related to everyday life</li>
+            </ul>
+
+            <h2>Jinmei Action Club</h2>
+                <ul>
+                    <li>
+                        <span>Volunteer</span>  <span1>Oct - Dec 2022</span1>
+                        <li>Assisted elderly people who had Alzheimer’s Disease (AD) in a local activity center</li>
+                    </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+<!-- projects -->
+ <div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects & Awards</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Programming</h2>
+                <p>Checkout my Github to see some of my projects! Also stay tuned for more to come~</p>
+                <a href="https://github.com/Fei-Q" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-flask"></i>
+                <h2>Life Sciences</h2>
+                <p>Brainbee: 2nd Place (Regional) - 2023</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-person-chalkboard"></i>
+                <h2>Social Sciences</h2>
+                <p><span>China Thinks Big</span>: Team 3rd Place (National), Individual 3rd Place (Global) - 2023</p>
+                <br>
+                <p><span>World Scholar's Cup</span>: 12 gold medals, 12 silver medals - 2020</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> 7yifei@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (804) 247-7617</p>
+                <div class="social-icons">
+                    <!-- <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a> -->
+                    <!-- <a href=""><i class="fa-brands fa-twitter-square"></i></a> -->
+                    <a href="https://www.instagram.com/7yifei/profilecard/?igsh=MWU2YzRjbnZvanl0aA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/yifeiq" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" download class="btn btn2">View Resume</a>
+            </div>
+            <!-- <div class="contact-right"></div> -->
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @YifeiQi. Made with <i class="fa-solid fa-heart"></i> Oct 2024</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-BDV_QjdMdKdyQ0YXPYVwAUKoFUM62C9k7_3dSSPqVRAMuVzNjJwvCLkfOL1YsMOj/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innterHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
